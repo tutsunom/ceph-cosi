@@ -50,12 +50,12 @@ func (s *ProvisionerServer) ProvisionerCreateBucket(ctx context.Context,
 	klog.Info("Using ceph rgw to create Backend Bucket")
 	protocol := req.GetProtocol()
 	if protocol == nil {
-		klog.ErrorS(errNilProtocol, "Protocol is nil")
+		//klog.ErrorS(errNilProtocol, "Protocol is nil")
 		return nil, status.Error(codes.InvalidArgument, "Protocol is nil")
 	}
 	s3 := protocol.GetS3()
 	if s3 == nil {
-		klog.ErrorS(errs3ProtocolMissing, "S3 protocol is missing, only S3 is supported")
+		//klog.ErrorS(errs3ProtocolMissing, "S3 protocol is missing, only S3 is supported")
 		return nil, status.Error(codes.InvalidArgument, "only S3 protocol supported")
 	}
 	//TODO : validate S3 protocol defined, check points valid rgwendpoint, v4 signature check etc
