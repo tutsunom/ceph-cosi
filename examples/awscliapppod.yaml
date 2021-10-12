@@ -10,12 +10,12 @@ spec:
       stdin: true
       tty: true
       volumeMounts:
-        - name: cosi-secrets
+        - name: cosi-bucket
           mountPath: /data/cosi
   volumes:
-  - name: cosi-secrets
+  - name: cosi-bucket
     csi:
       driver: objectstorage.k8s.io
       volumeAttributes:
-        bar-name: sample-bar
+        bar-name: rgw-bar
         bar-namespace: default

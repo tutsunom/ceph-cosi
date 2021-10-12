@@ -1,9 +1,9 @@
 kind: BucketAccessRequest
 apiVersion: objectstorage.k8s.io/v1alpha1
 metadata:
-  name: sample-bar
+  name: rgw-bar
 spec:
-  bucketAccessClassName: sample-bac
-  bucketRequestName: sample-br
+  bucketAccessClassName: rgw-bac
+  bucketRequestName: rgw-br
 status:
   accessGranted: true

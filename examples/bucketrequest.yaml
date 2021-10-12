@@ -1,9 +1,9 @@
 kind: BucketRequest
 apiVersion: objectstorage.k8s.io/v1alpha1
 metadata:
-  name: sample-br
+  name: rgw-br
 spec:
-  bucketClassName: sample-bc
-  bucketPrefix: test
+  bucketClassName: rgw-bc
+  bucketPrefix: cosi
 status:
   bucketAvailable: true
