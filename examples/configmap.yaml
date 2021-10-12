@@ -3,4 +3,6 @@ kind: ConfigMap
 metadata:
   name: rgw-cm
 data:
-  provisioner_data: "test_data"
+  Effect: "Allow"
+  Action: "[ 's3:GetObject', 's3:PutObject' ]"
+  Resource: "[ 'arn:aws:s3:::cosi-5a423f6c-b13c-4d78-ae6d-4248e323713b', 'arn:aws:s3:::cosi-5a423f6c-b13c-4d78-ae6d-4248e323713b' ]"

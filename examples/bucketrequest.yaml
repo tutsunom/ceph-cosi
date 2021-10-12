@@ -3,7 +3,7 @@ apiVersion: objectstorage.k8s.io/v1alpha1
 metadata:
   name: rgw-br
 spec:
-  bucketClassName: rgw-bc
+  bucketClassName: rgw-bc-priv
   bucketPrefix: cosi
 status:
   bucketAvailable: true
