@@ -26,6 +26,7 @@ import (
 
 func NewDriver(ctx context.Context, provisioner, rgwEndpoint, accessKey, secretKey string) (*IdentityServer, *ProvisionerServer, error) {
 	// TODO : use different user this operation
+	klog.Info(accessKey, " ", secretKey, " ", rgwEndpoint)
 	s3Client, err := s3client.NewS3Agent(accessKey, secretKey, rgwEndpoint, true)
 	if err != nil {
 		klog.Fatalln(err)
