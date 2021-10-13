@@ -4,5 +4,5 @@ metadata:
   name: rgw-cm
 data:
   Effect: "Allow"
-  Action: "s3:GetObject"
-  Resource: "arn:aws:s3:::cosi-5a423f6c-b13c-4d78-ae6d-4248e323713b/*"
+  Action: "s3:*"
+  Resource: "arn:aws:s3:::*/*"
