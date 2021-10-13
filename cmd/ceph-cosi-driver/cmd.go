@@ -34,9 +34,9 @@ const provisionerName = "ceph.objectstorage.k8s.io"
 
 var (
 	driverAddress = "unix:///var/lib/cosi/cosi.sock"
-	AccessKey     = "H1K3UTRAXCKYTRA1U12W"
-	SecretKey     = "yBC016g7BxrwBmUZNrLvULTAWGhTqXw3dv4n6CGl"
-	Endpoint      = "172.30.39.119:80"
+	AccessKey     = ""
+	SecretKey     = ""
+	Endpoint      = ""
 )
 
 var cmd = &cobra.Command{
